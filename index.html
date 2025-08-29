@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #222;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #222;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .project {
+            background: #fafafa;
+            border-radius: 6px;
+            padding: 1rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #222;
+            color: #fff;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gaston Doe</h1>
+        <p>Web Developer &amp; Designer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Gaston, a passionate web developer with experience in building modern, responsive websites and web applications. I love turning ideas into reality using code and design.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project One</h3>
+                    <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project Two</h3>
+                    <p>Todo List app with local storage and intuitive UI.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project Three</h3>
+                    <p>Blog platform with user authentication and markdown support.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Email: <a href="mailto:gaston@example.com">gaston@example.com</a><br>
+                LinkedIn: <a href="#" target="_blank">linkedin.com/in/gaston</a>
+            </p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Gaston Doe. All rights reserved.
+    </footer>
+</body>
+</html>
